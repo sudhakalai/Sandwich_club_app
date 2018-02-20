@@ -84,7 +84,7 @@ public class DetailActivity extends AppCompatActivity {
             alsoKnownAs = alsoKnownAs.substring(1, alsoKnownAs.length() -1);
             alsoKnownAsTextview.setText(alsoKnownAs);
         }else {
-            alsoKnownAsTextview.setText("---");
+            alsoKnownAsTextview.setText(R.string.no_details_available);
         }
 
         //Populating the list of ingredients
@@ -95,7 +95,7 @@ public class DetailActivity extends AppCompatActivity {
            ingredients = ingredients.substring(1, ingredients.length() -1);
             ingredientsTextview.setText(ingredients);
         }else {
-            ingredientsTextview.setText("---");
+            ingredientsTextview.setText(R.string.no_details_available);
         }
 
         //Populating the place of origin
@@ -103,7 +103,7 @@ public class DetailActivity extends AppCompatActivity {
         if(!placeOfOrigin.isEmpty()){
             originTextview.setText(placeOfOrigin);
         }else{
-            originTextview.setText("---");
+            originTextview.setText(R.string.no_details_available);
         }
 
        //Populating the description
